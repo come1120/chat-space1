@@ -63,5 +63,6 @@ groupテーブル
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
 ### Association
+- belongs_to :groups_user
 - has_many :messages
 - has_many  :users,  through:  :groups_users
