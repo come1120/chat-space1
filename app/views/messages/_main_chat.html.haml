@@ -1,0 +1,32 @@
+.main_chat
+  .chat_main_group_info
+    .info_group_name
+      test
+      .info_group_menbers
+        menber:○○
+    .info_btn
+    = link_to "#", class: "_btn_edit" do
+      Edit
+  .chat_main_space
+    .message_title
+      .message_user
+        username
+      .message_date
+        2020/02/03/(wed)00:00:00
+    .message_comment
+      おはよう
+    .message_title2
+      .message_user2
+        username
+      .message_date2
+        2020/02/03/(wed)01:00:00
+    .message_comment2
+      おはよう!!  
+  .chat_main_message
+    %form.new_messege
+      .form_box 
+        %input{type:"text", class:"form_message", placeholder:"type a message"} 
+        %label{class:"form_btn--icon"}
+          = icon('fas', 'image')
+          %input{type:"file", class:"from_btn_file"}
+      %input{type:"submit", class:"form_send_btn", value:"send"}
