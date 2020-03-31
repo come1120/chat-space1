@@ -1,15 +1,15 @@
 .side_bar
-  .side_bar_user_name
-    .top_user_name_space
-      .top_user_name
+  .side_bar__username
+    .side_bar__top
+      .side_bar__top--username
         username
-      .top_icon
-        = link_to "#", class: "top_icon__btn" do
+      .side_bar__top--icon
+        = link_to "#", class: "side_bar__top--icon_btn" do
           = icon('fas', 'edit')
-        = link_to "#", class: "top_icon__btn" do
+        = link_to "#", class: "side_bar__top--icon_btn" do
           = icon('fas', 'cog')
-  .side_bar_group 
-    = link_to "#", class: "group__name" do
+  .side_bar__group 
+    = link_to "#", class: "side_bar__group--name" do
       test
-    = link_to "#", class: "group__message" do
+    = link_to "#", class: "side_bar__group--message" do
       まだメッセージがありません
