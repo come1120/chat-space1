@@ -2,7 +2,7 @@
   height: 100%;
   width: 300px;
   background-color: #253141;
-  .side_bar__username{
+  &__username{
     height: 100px;
     padding: 20px;
     display: flex;
@@ -12,18 +12,18 @@
       width: 100%;
       display: flex;
       justify-content: space-between;
-      .side_bar__top--username{
-        color: white;
+      &--username{
+        color: $white_color;
         font-weight: bold;
         line-height: 20px;
       }
-      .side_bar__top--icon{
+      &--icon{
         height: 100%;
         width: 60px;
         text-align: right;
         line-height: 20px;
         .side_bar__top--icon_btn{
-          color: #ffffff;
+          color: $white_color;
           text-decoration: none;
         }
       }
@@ -33,20 +33,20 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px;
-    .side_bar__group--name{
-      color: white;
+    &--name{
+      color:$white_color;
       font-weight: bold;
-      font-size: 15px;
       text-decoration: none;
       display: block;
+      font-size: 15px;
       margin-bottom: 5px;
     }
-    .side_bar__group--message{
-      color: white;
+    &--message{
+      color:$white_color;
       font-weight: bold;
-      font-size: 11px;
       text-decoration: none;
       display: block;
+      font-size: 11px;
       padding-bottom: 40px;
     }
   }

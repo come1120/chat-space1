@@ -1,13 +1,13 @@
 .chat_main{
   height: 100%;
   width: calc(100vw - 300px);
-  background-color: #ffffff;
-  .chat_main__group_info{
+  background-color: $white_color;
+  &__group_info{
     height: 100px;
     border-bottom: 1px #eeeeee solid;
     display: flex;
     justify-content: space-between;
-    .chat_main__group_info--name{
+    &--name{
       color: #333333;
       font-size: 20px;
       margin: 35px 0px 15px 40px;
@@ -19,7 +19,7 @@
     .btn_edit{
       text-decoration: none;
       display: block;
-      color: #38aef0;
+      color: $blue_color;
       font-size: 16px;
       margin: 28px 60px 0px 20px;
     }
@@ -28,7 +28,7 @@
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
     padding: 30px 0 0 40px;
-    .chat_main__space--message_title{
+    &--message_title{
       display: flex;
       margin-bottom: 15px;
       .message_user{
@@ -41,12 +41,12 @@
         font-size: 12px;
       }
     }
-    .chat_main__space--message_comment{
+    &--message_comment{
       color: #434A54;
       font-size: 14px;
       margin-bottom: 46px;
     }
-    .chat_main__space--message_title2{
+    &--message_title2{
       display: flex;
       margin-bottom: 15px;
       .message_user2{
@@ -59,7 +59,7 @@
         font-size: 12px;
       }
     }
-    .chat_main__space--message_comment2 {
+    &--message_comment2 {
       color: #434A54;
       font-size: 14px;
       margin-bottom: 46px;
@@ -77,7 +77,7 @@
         position: relative;
         .form_message{
         color: #999999;
-        background-color: white;
+        background-color: $white_color;
         height: 50px;
         width: 100%;
         padding: 0 40px 0 10px;
@@ -92,10 +92,10 @@
           }
       }     
       .form_send_btn{ 
-      color: white;
+      color: $white_color;
       height: 50px;
       width: 100px;
-      background-color: #38aef0;
+      background-color: $blue_color;
       margin-left: 15px;
       }
     }
