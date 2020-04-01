@@ -1,0 +1,15 @@
+.side_bar
+  .side_bar__username
+    .side_bar__top
+      .side_bar__top--username
+        username
+      .side_bar__top--icon
+        = link_to "#", class: "side_bar__top--icon_btn" do
+          = icon('fas', 'edit')
+        = link_to "#", class: "side_bar__top--icon_btn" do
+          = icon('fas', 'cog')
+  .side_bar__group 
+    = link_to "#", class: "side_bar__group--name" do
+      test
+    = link_to "#", class: "side_bar__group--message" do
+      まだメッセージがありません
