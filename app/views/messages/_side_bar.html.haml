@@ -8,10 +8,12 @@
           = icon('fas', 'edit', class: "side_bar__top--icon_btn")
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: "side_bar__top--icon_btn")
-  .side_bar__group 
+  
+  .side_bar__group
     - current_user.groups.each do |group|
-      .group
-      = link_to "#", class: "side_bar__group--name" do
-        test
-      = link_to "#", class: "side_bar__group--message" do
-        まだメッセージがありません
+      .side_bar__group_list
+        = link_to group_messages_path(group) do
+          .side_bar__group_list--name
+            = group.name
+          .side_bar__group_list--message
+            = group.show_last_message

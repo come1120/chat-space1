@@ -33,21 +33,21 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px;
-    &--name{
-      color:$white_color;
-      font-weight: bold;
-      text-decoration: none;
-      display: block;
-      font-size: 15px;
-      margin-bottom: 5px;
-    }
-    &--message{
-      color:$white_color;
-      font-weight: bold;
-      text-decoration: none;
-      display: block;
-      font-size: 11px;
-      padding-bottom: 40px;
+    .side_bar__group_list{
+      &--name{
+        color:$white_color;
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 5px;
+        text-decoration: none;
+      }
+      &--message{
+        color:$white_color;
+        font-weight: bold;
+        font-size: 11px;
+        padding-bottom: 40px;
+        text-decoration: none;
+      }
     }
   }
 }
