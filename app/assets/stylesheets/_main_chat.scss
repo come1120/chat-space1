@@ -41,63 +41,50 @@
         font-size: 12px;
       }
     }
-    &--message_comment{
-      color: #434A54;
-      font-size: 14px;
-      margin-bottom: 46px;
-    }
-    &--message_title2{
-      display: flex;
-      margin-bottom: 15px;
-      .message_user2{
-        color: #333333;
-        font-size: 16px;
-        margin-right: 5px;
-      }
-      .message_date2{
-        color: #999999;
-        font-size: 12px;
-      }
-    }
-    &--message_comment2 {
+    &--message_commen{
       color: #434A54;
       font-size: 14px;
       margin-bottom: 46px;
     }
   }
+  
   .chat_main__message{
     height: 90px;
     background-color: #d2d2d2;
-    padding: 20px 40px 20px 40px;
-    form{
-      display: flex;
-      .form_box{
-        display: flex;
+    padding: 20px 40px;
+    &__form {
+      &__input{
         width: 100%;
         position: relative;
-        .form_message{
-        color: #999999;
-        background-color: $white_color;
-        height: 50px;
-        width: 100%;
-        padding: 0 40px 0 10px;
-        }
-        .form_btn--icon{
+        display: flex;
+        &--text {
+          color: #999999;
+          background-color: $white_color;
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+          }
+          .form__icon{
+          font-size: 1.3rem;
           position: absolute;
           top: 10px;
-          right: 10px;
-        }
-          .from_btn_file{
+          right: 125px;
+            &__label{
+            }
+            &__image{
+            }
+          .form__file{
             display: none;
-          }
-      }     
+          }   
+         }   
       .form_send_btn{ 
-      color: $white_color;
-      height: 50px;
-      width: 100px;
-      background-color: $blue_color;
-      margin-left: 15px;
+        color: $white_color;
+        height: 50px;
+        width: 100px;
+        background-color: $blue_color;
+        margin-left: 15px;
       }
     }
   }
+ }
 }
