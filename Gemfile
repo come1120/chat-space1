@@ -60,5 +60,15 @@ gem 'devise'
 
 gem 'pry-rails'
 
+<<<<<<< Updated upstream
 gem 'carrierwave'
 gem 'mini_magick'
+=======
+gem 'rspec-rails'
+
+gem 'factory_bot_rails'
+
+gem 'rails-controller-testing'
+
+gem 'faker', "~> 2.8"
+>>>>>>> Stashed changes
