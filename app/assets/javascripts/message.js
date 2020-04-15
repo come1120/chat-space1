@@ -61,8 +61,6 @@ $(function(){
      .fail(function() {
       alert("メッセージ送信に失敗しました");
      });
-
-
      var reloadMessages = function() {
       var last_message_id = $('.chat_main__space-message:last').data("message-id");
       console.log(last_message_id)
@@ -79,7 +77,7 @@ $(function(){
             insertHTML += buildHTML(message)
           });
           $('.chat_main__space').append(insertHTML);
-          $('.chat_main__space').animate({ scrollTop: $('chat_main__space')[0].scrollHeight});
+          $('.chat_main__space').animate({ scrollTop: $('.chat_main__space')[0].scrollHeight});
         }
       })
       .fail(function() {
