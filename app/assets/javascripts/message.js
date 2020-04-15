@@ -1,4 +1,6 @@
 $(function(){
+  var last_message_id = $('.message:last').data("message-id");
+  console.log(last_message_id);
   function buildHTML(message){
     if (message.image) {
       var html =
@@ -17,7 +19,7 @@ $(function(){
           </p>
           <img src="${message.image } >
         </div>
-      </div>`
+      </div>` 
       return html;
     } else {
       var html = 
