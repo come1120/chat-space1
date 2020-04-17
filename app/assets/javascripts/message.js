@@ -1,5 +1,5 @@
 $(function(){
-  var last_message_id = $('.message:last').data("message-id");
+  var last_message_id = $('.chat_main__space:last').data("message-id");
   console.log(last_message_id);
   function buildHTML(message){
     if (message.image) {
@@ -7,17 +7,17 @@ $(function(){
       `<div class="chat_main__space-message" data-message-id=${message.id}>
         <div class="chat_main__space--message_title">
           <div class="message_user">
-            ${message.user_name }
-          </div>
+            ${message.user_name}
+          </div>  
           <div class="message_date">
-            ${message.created_at }
+            ${message.created_at}
           </div>
         </div>
         <div class="chat_main__space--message_comment">
           <p class="lower-message__content">
-            ${message.content }
+            ${message.content}
           </p>
-          <img src="${message.image } >
+          <img src=${message.image}>
         </div>
       </div>` 
       return html;
