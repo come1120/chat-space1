@@ -34,19 +34,19 @@
     background-color: #2f3e51;
     padding: 20px;
     .side_bar__group_list{
-      &--name{
+      a{
         color:$white_color;
+        text-decoration: none;
+      }
+      &--name{
         font-weight: bold;
         font-size: 15px;
         margin-bottom: 5px;
-        text-decoration: none;
       }
       &--message{
-        color:$white_color;
         font-weight: bold;
         font-size: 11px;
         padding-bottom: 40px;
-        text-decoration: none;
       }
     }
   }

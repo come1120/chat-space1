@@ -3,6 +3,7 @@
     .chat_main__group_info--name
       = @group.name
       .chat_main__group_info--menbers
+        Member :
         -@group.users.each do |user|
           = user.name
     %ul.chat_main__group_info--btn
