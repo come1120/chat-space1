@@ -33,6 +33,7 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px;
+    overflow: scroll;
     .side_bar__group_list{
       a{
         color:$white_color;

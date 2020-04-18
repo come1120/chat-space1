@@ -1,5 +1,5 @@
 $(function(){
-  var last_message_id = $('.chat_main__space:last').data("message-id");
+  var last_message_id = $('.chat_main__space-message:last').data("message-id");
   console.log(last_message_id);
   function buildHTML(message){
     if (message.image) {
@@ -63,6 +63,9 @@ $(function(){
      .fail(function() {
       alert("メッセージ送信に失敗しました");
      });
+    });
+
+    
      var reloadMessages = function() {
       var last_message_id = $('.chat_main__space-message:last').data("message-id");
       console.log(last_message_id)
@@ -86,9 +89,10 @@ $(function(){
         alert('error');
       });
     };
+
+
     if (document.location.href.match(/\/groups\/\d+\/messages/)) {
       setInterval(reloadMessages, 7000);
     }
-  });
 })
   
