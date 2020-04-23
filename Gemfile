@@ -36,27 +36,28 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :test do
-  gem 'rspec-rails', '~> 3.5'
-  gem 'rails-controller-testing'
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'rails-controller-testing'
+  gem 'rspec-rails', '~> 3.5'
 end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'capistrano'
-  gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
   gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
   gem 'capistrano3-unicorn'
 end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
+  gem 'web-console', '>= 3.3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'rubocop', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
@@ -66,13 +67,13 @@ group :production do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'haml-rails'
-gem 'font-awesome-sass'
-gem 'devise'
-gem 'pry-rails'
 gem 'carrierwave'
-gem 'mini_magick'
+gem 'devise'
 gem 'fog-aws'
+gem 'font-awesome-sass'
+gem 'haml-rails'
+gem 'mini_magick'
+gem 'pry-rails'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
